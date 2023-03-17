@@ -38,6 +38,8 @@ I learned how to use padding and then utilize "justify-content: space-between" a
 
 I'd like to learn how to keep the footer on the bottom of the screen, then have it disappear when the viewport gets vertically smaller. Right now when the viewport gets vertically smaller, the footer overlaps the main content.
 
+I'd also like to learn how to use the background images better. Felt like I had to do some weird stuff to make them work.
+
 ## Author
 
 - Frontend Mentor - [@thatsR](https://www.frontendmentor.io/profile/thatsR)
