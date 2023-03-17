@@ -1,0 +1,157 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+/* Primary */
+
+--darkCyan: hsl(158, 36%, 37%);
+--cream: hsl(30, 38%, 92%);
+
+/* Neutral */
+
+--veryDarkBlue: hsl(212, 21%, 14%);
+--darkGrayishBlue: hsl(228, 12%, 48%);
+
+--border-radius: 10px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+    font-family:"Montserrat", sans-serif;
+}
+
+main {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.container {
+    width: 300px;
+    height: 450px;
+}
+
+.left-container {
+    width: 300px;
+    height: 450px;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: contain;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 33px;
+    background-color: white;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+h2 {
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: "Fraunces", sans-serif;
+    color: var(--veryDarkBlue);
+    line-height: 1em;
+}
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+.current-price {
+    font-family: "Fraunces", sans-serif;
+    color: var(--darkCyan);
+    font-size: 32px;
+}
+
+.original-price {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    bottom: 8px;
+    left: 10px;
+}
+
+h2, p, .original-price {
+    color: var(--darkGrayishBlue);
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 48px;
+    width: 100%;
+    background-color: var(--darkCyan);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700px;
+}
+
+footer {
+    height: 14px;
+    width: 100%;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 660px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left-container {
+        min-height: 210px;
+        max-height: 210px;
+        width: 300px;
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+        background-image: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+    }
+
+    .right-container {
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
+        max-height: 400px;
+        min-height: 400px;
+    }
+}
