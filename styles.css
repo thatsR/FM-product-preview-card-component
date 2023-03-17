@@ -106,7 +106,7 @@ h2, p, .original-price {
     color: var(--darkGrayishBlue);
 }
 
-button {
+.add-to-cart {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,6 +120,11 @@ button {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 700px;
+    text-decoration: none;
+}
+
+.add-to-cart:hover {
+    background-color:hsl(158, 36%, 20%)
 }
 
 footer {
